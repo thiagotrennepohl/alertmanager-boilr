@@ -10,7 +10,7 @@ services:
        aliases:
          - {{environment}}_{{projectName}}_{{serviceName}}_exporter
     environment:
-      MONGODB_URL: "{{serviceUser}}:{{servicePassword}}@{{serviceAddr}}"
+      MONGODB_URL: "{{serviceUsername}}:{{servicePassword}}@{{serviceAddr}}"
   
 networks:
   default:

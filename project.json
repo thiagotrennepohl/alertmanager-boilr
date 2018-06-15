@@ -5,5 +5,5 @@
   "serviceName": "mongodb",
   "serviceAddr": "19.268.200.1:27017",
   "servicePassword": "somepass",
-  "serviceAddr": "someaddr"
+  "serviceUsername": "someaddr"
 }
