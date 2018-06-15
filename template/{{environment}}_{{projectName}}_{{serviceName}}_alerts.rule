@@ -1,5 +1,8 @@
+{{ if eq serviceName "mongodb" }}
 - alert: [{{projectName}}] {{serviceName}} is missing data
     expr: absent(mongodb_mongod_connections{}) == 1
     annotations:
       summary: {{ "{{$labels.instance}}" }} is missing data - Check mongo exporters"
       description: {{ "{{$labels.instance }}" }} is missing data - Check mongo exporters"
+
+{{ end}}

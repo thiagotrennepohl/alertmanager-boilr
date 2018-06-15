@@ -1,0 +1,19 @@
+{{ if eq serviceName "mongodb" }}
+version: '2'
+services:
+  {{projectName}}_{{serviceName}}_exporter:
+    container_name: {{environment}}_{{projectName}}_{{serviceName}}_exporter
+    hostname: {{environment}}_{{projectName}}_{{serviceName}}_exporter
+    image: registry.agilepromoter.com/mongodb-exporter
+    networks:
+      default:
+       aliases:
+         - {{environment}}_{{projectName}}_{{serviceName}}_exporter
+    environment:
+      MONGODB_URL: "mongoexporter:f01uc41qb0t0up4n0is@{{serviceAddr}}"
+  
+networks:
+  default:
+    external:
+      name: storage_default
+{{ end }}

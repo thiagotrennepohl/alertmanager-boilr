@@ -1,0 +1,3 @@
+{{if ne checkEndpoint ""}}
+- {{checkEndpoint}}
+{{end}}

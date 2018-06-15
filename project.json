@@ -1,5 +1,7 @@
 {
+  "checkEndpoint": "my-super-app.domain.com/health",
   "environment": "production|staging|dev",
   "projectName": "mysuperapp",
-  "serviceName": "mongodb"  
+  "serviceName": "mongodb",
+  "serviceAddr": "19.268.200.1:27017"
 }
