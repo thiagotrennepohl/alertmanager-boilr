@@ -1,4 +1,5 @@
 {
+  "environment": "production|staging|dev",
   "projectName": "mysuperapp",
-  "serviceName": "mongodb"
+  "serviceName": "mongodb"  
 }
